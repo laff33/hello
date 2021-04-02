@@ -1,3 +1,5 @@
+from functions import square
+
 #name = input("Name: ")
 #print(f"Hello, {name}")
 
@@ -12,9 +14,13 @@ else:
 langs = ("jp", "fr", "de", "it", "es")
 print(f"We translate {len(langs)} languages.")
 
-for x in range(6):
-    print(x)
+'''for x in range(6):
+    print(x)'''
 
-houses = {"Harry": "Gryffindor", "Draco": "Slytherin"}
-houses["Hermione"] = "Gryffindor"
-print(houses["Harry"])
+rates = {"ja": 0.02, "fr": 0.03, "de": 0.04}
+print(rates)
+
+
+
+for i in range(5):
+    print(f"The square of {i} is {square(i)}")
